@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+
+.mainBtn {
+  @apply rounded h-[38px] px-[17px] mx-[17px] my-[9px] text-white w-[100%] sm:inline-block sm:m-[10px] sm:inline-block sm:w-max; 
+  }
+
+.modalForm {
+  @apply grid grid-rows-5 gap-y-[44px] w-[100%] sm:grid-rows-2 sm:grid-cols-3 sm:gap-x-[29px] lg:grid-rows-2 lg:grid-cols-4 lg:gap-x-[20px] lg:gap-y-[18px] ;
+}
+.overlay {
+  @apply fixed opacity-[.15] bg-[#6B7280]  flex  justify-center justify-items-center items-center top-0 bottom-0 left-0 right-0;
+}
+.modal_wrapper { 
+  @apply absolute flex justify-center justify-items-center items-center top-0 bottom-0 left-0 right-0;
+}
+.label {
+  @apply absolute left-[-9px] top-[-29px] h-[18px] px-[8px] py-[0] text-[16px] leading-[20px] text-gray-600 font-medium;
+}
+.input {
+  @apply px-[13px] py-[9px] w-[100%] h-[38px] rounded-md border border-solid shadow-gray-300;
+}
+.select {
+  @apply pl-[6px] pr-[9px] h-[38px] border border-solid shadow-gray-300 rounded-md;
+}
+@tailwind utilities;
+
+@layer base {
+    html {
+      font-family: Inter, system-ui, sans-serif;
+    }
+  }
